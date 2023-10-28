@@ -50,7 +50,6 @@
             // 
             // textBoxDestDir
             // 
-            this.textBoxDestDir.Enabled = false;
             this.textBoxDestDir.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDestDir.Location = new System.Drawing.Point(12, 118);
             this.textBoxDestDir.Name = "textBoxDestDir";
@@ -92,26 +91,29 @@
             // cancelBtn
             // 
             this.cancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancelBtn.Enabled = false;
             this.cancelBtn.Location = new System.Drawing.Point(405, 178);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(107, 44);
             this.cancelBtn.TabIndex = 5;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // stopBtn
             // 
             this.stopBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.stopBtn.Enabled = false;
             this.stopBtn.Location = new System.Drawing.Point(292, 178);
             this.stopBtn.Name = "stopBtn";
             this.stopBtn.Size = new System.Drawing.Size(107, 44);
             this.stopBtn.TabIndex = 6;
             this.stopBtn.Text = "Stop";
             this.stopBtn.UseVisualStyleBackColor = true;
+            this.stopBtn.Click += new System.EventHandler(this.stopBtn_Click);
             // 
             // textBoxCopyDir
             // 
-            this.textBoxCopyDir.Enabled = false;
             this.textBoxCopyDir.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCopyDir.Location = new System.Drawing.Point(12, 68);
             this.textBoxCopyDir.Name = "textBoxCopyDir";
